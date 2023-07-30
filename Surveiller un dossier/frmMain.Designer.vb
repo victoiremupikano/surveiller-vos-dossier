@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class SurveillanceInterface
+Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,10 +23,10 @@ Partial Class SurveillanceInterface
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SurveillanceInterface))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.txtRapport = New System.Windows.Forms.TextBox()
         Me.btnDemarrer = New System.Windows.Forms.Button()
-        Me.FileSystemWatcher1 = New System.IO.FileSystemWatcher()
+        Me.FileSystemWatcher = New System.IO.FileSystemWatcher()
         Me.pnlHaut = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.lblDossier = New System.Windows.Forms.Label()
@@ -48,8 +48,8 @@ Partial Class SurveillanceInterface
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Timer = New System.Windows.Forms.Timer(Me.components)
+        CType(Me.FileSystemWatcher, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlHaut.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,10 +86,10 @@ Partial Class SurveillanceInterface
         Me.btnDemarrer.Text = "Demmarrer la surveillance"
         Me.btnDemarrer.UseVisualStyleBackColor = False
         '
-        'FileSystemWatcher1
+        'FileSystemWatcher
         '
-        Me.FileSystemWatcher1.EnableRaisingEvents = True
-        Me.FileSystemWatcher1.SynchronizingObject = Me
+        Me.FileSystemWatcher.EnableRaisingEvents = True
+        Me.FileSystemWatcher.SynchronizingObject = Me
         '
         'pnlHaut
         '
@@ -163,7 +163,7 @@ Partial Class SurveillanceInterface
         'PictureBox3
         '
         Me.PictureBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox3.Image = Global.Surveiller_un_dossier.My.Resources.Resources.icon_minus_06
+        Me.PictureBox3.Image = Global.Surveiller_un_dossier.My.Resources.Resources.icon_minus
         Me.PictureBox3.Location = New System.Drawing.Point(620, 1)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(25, 22)
@@ -331,12 +331,12 @@ Partial Class SurveillanceInterface
         Me.Panel1.Size = New System.Drawing.Size(712, 2)
         Me.Panel1.TabIndex = 13
         '
-        'Timer1
+        'Timer
         '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 1000
+        Me.Timer.Enabled = True
+        Me.Timer.Interval = 1000
         '
-        'SurveillanceInterface
+        'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -352,10 +352,10 @@ Partial Class SurveillanceInterface
         Me.Controls.Add(Me.grTxt)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "SurveillanceInterface"
+        Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " "
-        CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FileSystemWatcher, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlHaut.ResumeLayout(False)
         Me.pnlHaut.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -374,7 +374,7 @@ Partial Class SurveillanceInterface
     Friend WithEvents txtRapport As TextBox
     Friend WithEvents txtcheminDossier As TextBox
     Friend WithEvents btnDemarrer As Button
-    Friend WithEvents FileSystemWatcher1 As IO.FileSystemWatcher
+    Friend WithEvents FileSystemWatcher As IO.FileSystemWatcher
     Friend WithEvents lblEthiquette As Label
     Friend WithEvents pnlHaut As Panel
     Friend WithEvents grTxt As GroupBox
@@ -394,6 +394,6 @@ Partial Class SurveillanceInterface
     Friend WithEvents lblUn As Label
     Friend WithEvents lblGarger As Label
     Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Timer As Timer
     Friend WithEvents btnDossier As Button
 End Class

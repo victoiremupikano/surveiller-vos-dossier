@@ -18,10 +18,6 @@
         Me.Close()
     End Sub
 
-    Private Sub About_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub pnlHaut_MouseMove(sender As Object, e As MouseEventArgs) Handles pnlHaut.MouseMove
         'mise dans l'evenement MouseMove
         If e.Button = MouseButtons.Left Then

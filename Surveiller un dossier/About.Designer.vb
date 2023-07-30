@@ -46,19 +46,17 @@ Partial Class About
         Me.pnlHaut.Controls.Add(Me.PictureBox1)
         Me.pnlHaut.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlHaut.Location = New System.Drawing.Point(0, 0)
-        Me.pnlHaut.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pnlHaut.Name = "pnlHaut"
-        Me.pnlHaut.Size = New System.Drawing.Size(1232, 48)
+        Me.pnlHaut.Size = New System.Drawing.Size(616, 25)
         Me.pnlHaut.TabIndex = 4
         '
         'PictureBox4
         '
         Me.PictureBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox4.Image = Global.Surveiller_un_dossier.My.Resources.Resources.icon_circle_slelected
-        Me.PictureBox4.Location = New System.Drawing.Point(8, 4)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PictureBox4.Location = New System.Drawing.Point(4, 2)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(50, 42)
+        Me.PictureBox4.Size = New System.Drawing.Size(25, 22)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 15
         Me.PictureBox4.TabStop = False
@@ -67,10 +65,9 @@ Partial Class About
         '
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Image = Global.Surveiller_un_dossier.My.Resources.Resources.icon_close
-        Me.PictureBox1.Location = New System.Drawing.Point(1174, 2)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.PictureBox1.Location = New System.Drawing.Point(587, 1)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(50, 42)
+        Me.PictureBox1.Size = New System.Drawing.Size(25, 22)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
@@ -78,11 +75,10 @@ Partial Class About
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Matura MT Script Capitals", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(266, 90)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(133, 47)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(194, 72)
+        Me.Label1.Size = New System.Drawing.Size(79, 24)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Garder"
         '
@@ -90,10 +86,9 @@ Partial Class About
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(452, 96)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label2.Location = New System.Drawing.Point(214, 45)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(80, 48)
+        Me.Label2.Size = New System.Drawing.Size(45, 25)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "un "
         '
@@ -102,20 +97,18 @@ Partial Class About
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Matura MT Script Capitals", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(532, 83)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label3.Location = New System.Drawing.Point(253, 38)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(179, 85)
+        Me.Label3.Size = New System.Drawing.Size(92, 42)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Oeil"
         '
         'lblAbout
         '
         Me.lblAbout.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAbout.Location = New System.Drawing.Point(24, 163)
-        Me.lblAbout.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.lblAbout.Location = New System.Drawing.Point(12, 85)
         Me.lblAbout.Name = "lblAbout"
-        Me.lblAbout.Size = New System.Drawing.Size(1206, 308)
+        Me.lblAbout.Size = New System.Drawing.Size(603, 160)
         Me.lblAbout.TabIndex = 8
         Me.lblAbout.Text = resources.GetString("lblAbout.Text")
         Me.lblAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -123,11 +116,10 @@ Partial Class About
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(728, 96)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.Label5.Location = New System.Drawing.Point(351, 45)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(293, 44)
+        Me.Label5.Size = New System.Drawing.Size(185, 25)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "sur vos dossiers"
         '
@@ -135,37 +127,34 @@ Partial Class About
         '
         Me.Panel1.BackColor = System.Drawing.Color.Maroon
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 481)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Panel1.Location = New System.Drawing.Point(0, 250)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1232, 4)
+        Me.Panel1.Size = New System.Drawing.Size(616, 2)
         Me.Panel1.TabIndex = 10
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Maroon
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel2.Location = New System.Drawing.Point(0, 48)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Panel2.Location = New System.Drawing.Point(0, 25)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(4, 433)
+        Me.Panel2.Size = New System.Drawing.Size(2, 225)
         Me.Panel2.TabIndex = 11
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.Maroon
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel3.Location = New System.Drawing.Point(1228, 48)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Panel3.Location = New System.Drawing.Point(614, 25)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(4, 433)
+        Me.Panel3.Size = New System.Drawing.Size(2, 225)
         Me.Panel3.TabIndex = 12
         '
         'About
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1232, 485)
+        Me.ClientSize = New System.Drawing.Size(616, 252)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -176,7 +165,6 @@ Partial Class About
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.pnlHaut)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Name = "About"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "About"

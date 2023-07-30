@@ -1,7 +1,7 @@
 ﻿Imports System.IO
 Imports System.Text
 
-Public Class SurveillanceInterface
+Public Class frmMain
 
     'varible globale dela date
     Dim dteGlobal As Date
@@ -15,7 +15,7 @@ Public Class SurveillanceInterface
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnDemarrer.Click
         'ici on recolter le chemin d'accès du dossier qu'on souhaite surveiller
         Try
-            FileSystemWatcher1.Path = txtcheminDossier.Text
+            FileSystemWatcher.Path = txtcheminDossier.Text
             txtcheminDossier.Enabled = False
 
         Catch ex As Exception
@@ -23,17 +23,17 @@ Public Class SurveillanceInterface
         End Try
     End Sub
 
-    Private Sub FileSystemWatcher1_Created(sender As Object, e As FileSystemEventArgs) Handles FileSystemWatcher1.Created
+    Private Sub FileSystemWatcher1_Created(sender As Object, e As FileSystemEventArgs) Handles FileSystemWatcher.Created
         'on utiliser la methode invoker, aussi AppendText pour continuer à ecrire dans la textbox. le e dans dans l'evenement contient les info sur le modification observer
         Invoke(New MethodInvoker(Sub() txtRapport.AppendText(vbNewLine & dteGlobal & vbNewLine & "l'element crée:" & vbNewLine & "Nom :" & e.Name & vbNewLine & "Chemin d'acces :" & e.FullPath & vbNewLine)))
     End Sub
 
-    Private Sub FileSystemWatcher1_Deleted(sender As Object, e As FileSystemEventArgs) Handles FileSystemWatcher1.Deleted
+    Private Sub FileSystemWatcher1_Deleted(sender As Object, e As FileSystemEventArgs) Handles FileSystemWatcher.Deleted
         'on utiliser la methode invoker, aussi AppendText pour continuer à ecrire dans la textbox. le e dans dans l'evenement contient les info sur le modification observer
         Invoke(New MethodInvoker(Sub() txtRapport.AppendText(vbNewLine & dteGlobal & vbNewLine & "l'element supprimer:" & vbNewLine & "Nom :" & e.Name & vbNewLine & "Chemin d'acces :" & e.FullPath & vbNewLine)))
     End Sub
 
-    Private Sub FileSystemWatcher1_Renamed(sender As Object, e As RenamedEventArgs) Handles FileSystemWatcher1.Renamed
+    Private Sub FileSystemWatcher1_Renamed(sender As Object, e As RenamedEventArgs) Handles FileSystemWatcher.Renamed
         'on utiliser la methode invoker, aussi AppendText pour continuer à ecrire dans la textbox. le e dans dans l'evenement contient les info sur le modification observer
         Invoke(New MethodInvoker(Sub() txtRapport.AppendText(vbNewLine & dteGlobal & vbNewLine & "l'element renommer:" & vbNewLine & "Nom :" & e.Name & vbNewLine & "Chemin d'acces :" & e.FullPath & vbNewLine)))
     End Sub
@@ -202,7 +202,7 @@ Public Class SurveillanceInterface
 
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
         dteGlobal = Date.Now
     End Sub
 

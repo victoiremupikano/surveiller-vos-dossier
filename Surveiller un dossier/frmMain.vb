@@ -92,11 +92,11 @@ Public Class frmMain
         End If
     End Sub
 
-    Private Sub lblDossier_MouseDown(sender As Object, e As MouseEventArgs) 
+    Private Sub lblDossier_MouseDown(sender As Object, e As MouseEventArgs)
         moveForm()
     End Sub
 
-    Private Sub lblDossier_MouseMove(sender As Object, e As MouseEventArgs) 
+    Private Sub lblDossier_MouseMove(sender As Object, e As MouseEventArgs)
         'mise dans l'evenement MouseMove
         If e.Button = MouseButtons.Left Then
             newpoint = Control.MousePosition
@@ -107,7 +107,7 @@ Public Class frmMain
         End If
     End Sub
 
-    Private Sub lblGarger_MouseMove(sender As Object, e As MouseEventArgs) 
+    Private Sub lblGarger_MouseMove(sender As Object, e As MouseEventArgs)
         'mise dans l'evenement MouseMove
         If e.Button = MouseButtons.Left Then
             newpoint = Control.MousePosition
@@ -118,15 +118,15 @@ Public Class frmMain
         End If
     End Sub
 
-    Private Sub lblGarger_MouseDown(sender As Object, e As MouseEventArgs) 
+    Private Sub lblGarger_MouseDown(sender As Object, e As MouseEventArgs)
         moveForm()
     End Sub
 
-    Private Sub lblOeil_MouseDown(sender As Object, e As MouseEventArgs) 
+    Private Sub lblOeil_MouseDown(sender As Object, e As MouseEventArgs)
         moveForm()
     End Sub
 
-    Private Sub lblOeil_MouseMove(sender As Object, e As MouseEventArgs) 
+    Private Sub lblOeil_MouseMove(sender As Object, e As MouseEventArgs)
         'mise dans l'evenement MouseMove
         If e.Button = MouseButtons.Left Then
             newpoint = Control.MousePosition
@@ -137,7 +137,7 @@ Public Class frmMain
         End If
     End Sub
 
-    Private Sub lblUn_MouseMove(sender As Object, e As MouseEventArgs) 
+    Private Sub lblUn_MouseMove(sender As Object, e As MouseEventArgs)
         'mise dans l'evenement MouseMove
         If e.Button = MouseButtons.Left Then
             newpoint = Control.MousePosition
@@ -148,7 +148,7 @@ Public Class frmMain
         End If
     End Sub
 
-    Private Sub lblUn_MouseDown(sender As Object, e As MouseEventArgs) 
+    Private Sub lblUn_MouseDown(sender As Object, e As MouseEventArgs)
         moveForm()
     End Sub
 

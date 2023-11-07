@@ -29,10 +29,6 @@ Partial Class frmMain
         Me.FileSystemWatcher = New System.IO.FileSystemWatcher()
         Me.pnlHaut = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.lblDossier = New System.Windows.Forms.Label()
-        Me.lblOeil = New System.Windows.Forms.Label()
-        Me.lblUn = New System.Windows.Forms.Label()
-        Me.lblGarger = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
@@ -95,10 +91,6 @@ Partial Class frmMain
         '
         Me.pnlHaut.BackColor = System.Drawing.Color.Maroon
         Me.pnlHaut.Controls.Add(Me.PictureBox4)
-        Me.pnlHaut.Controls.Add(Me.lblDossier)
-        Me.pnlHaut.Controls.Add(Me.lblOeil)
-        Me.pnlHaut.Controls.Add(Me.lblUn)
-        Me.pnlHaut.Controls.Add(Me.lblGarger)
         Me.pnlHaut.Controls.Add(Me.PictureBox3)
         Me.pnlHaut.Controls.Add(Me.PictureBox2)
         Me.pnlHaut.Controls.Add(Me.LinkLabel1)
@@ -118,47 +110,6 @@ Partial Class frmMain
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 14
         Me.PictureBox4.TabStop = False
-        '
-        'lblDossier
-        '
-        Me.lblDossier.AutoSize = True
-        Me.lblDossier.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDossier.Location = New System.Drawing.Point(175, 3)
-        Me.lblDossier.Name = "lblDossier"
-        Me.lblDossier.Size = New System.Drawing.Size(112, 20)
-        Me.lblDossier.TabIndex = 13
-        Me.lblDossier.Text = "sur vos dossiers"
-        '
-        'lblOeil
-        '
-        Me.lblOeil.AutoSize = True
-        Me.lblOeil.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOeil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lblOeil.Location = New System.Drawing.Point(135, 3)
-        Me.lblOeil.Name = "lblOeil"
-        Me.lblOeil.Size = New System.Drawing.Size(34, 20)
-        Me.lblOeil.TabIndex = 12
-        Me.lblOeil.Text = "Oeil"
-        '
-        'lblUn
-        '
-        Me.lblUn.AutoSize = True
-        Me.lblUn.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUn.Location = New System.Drawing.Point(100, 3)
-        Me.lblUn.Name = "lblUn"
-        Me.lblUn.Size = New System.Drawing.Size(29, 20)
-        Me.lblUn.TabIndex = 11
-        Me.lblUn.Text = "un "
-        '
-        'lblGarger
-        '
-        Me.lblGarger.AutoSize = True
-        Me.lblGarger.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGarger.Location = New System.Drawing.Point(43, 3)
-        Me.lblGarger.Name = "lblGarger"
-        Me.lblGarger.Size = New System.Drawing.Size(51, 20)
-        Me.lblGarger.TabIndex = 10
-        Me.lblGarger.Text = "Garder"
         '
         'PictureBox3
         '
@@ -389,10 +340,6 @@ Partial Class frmMain
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents btnSauver As Button
-    Friend WithEvents lblDossier As Label
-    Friend WithEvents lblOeil As Label
-    Friend WithEvents lblUn As Label
-    Friend WithEvents lblGarger As Label
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Timer As Timer
     Friend WithEvents btnDossier As Button
